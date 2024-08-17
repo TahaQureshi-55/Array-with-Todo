@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+input {
+  width: calc(100% - 50px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #d20202;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: #e0e0e0;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+li .delete-btn {
+  position: relative; 
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 24px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  left: 18px ;
+}
+
+li .delete-btn:hover {
+  background-color: #0033cc;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  li .delete-btn {
+    padding: 5px 2px;
+  
+}}
+
+@media (max-width: 261px) {
+  .todo-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    width: 35px;
+  }
+
+  li {
+    padding: 8px 15px;
+  }
+
+  li .delete-btn {
+    padding: 2px 0px;
+  }
+}
